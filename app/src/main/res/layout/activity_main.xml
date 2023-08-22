@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:adjustViewBounds="true"
+            android:id="@+id/iv"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="200dp"
+            android:scaleType="centerCrop"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/anim"
+            android:adjustViewBounds="true"
+            android:layout_height="200dp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingHorizontal="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:id="@+id/b_bounce"
+                android:background="#006CE8"
+                android:text="Bounce"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:backgroundTint="@null" />
+
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:id="@+id/b_squential"
+                android:layout_weight="1"
+                android:background="#006CE8"
+                android:text="Sequential"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:backgroundTint="@null" />
+
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/b_togather"
+                android:background="#006CE8"
+                android:text="Togather"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:backgroundTint="@null" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:background="#006CE8"
+                android:padding="5dp"
+                android:id="@+id/b_facebook"
+                android:text="Facebook"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:backgroundTint="@null"
+                tools:ignore="NestedWeights" />
+
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:background="#006CE8"
+                android:text="YouTube"
+                android:id="@+id/b_youtube"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:backgroundTint="@null" />
+
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#006CE8"
+                android:text="Twitter"
+                android:id="@+id/b_twitter"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:backgroundTint="@null" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
